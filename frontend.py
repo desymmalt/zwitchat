@@ -16,7 +16,7 @@ def init(fastapi_app: FastAPI):
 # Storing Commands
 
 online_users = {
-    "user1": {"name": "tr1x_em", "status": "Online", "avatar": "https://i.ibb.co/L1svvRg/tr1x-em.png"},
+    "user1": {"name": "desymm", "status": "Online", "avatar": "https://i.ibb.co/L1svvRg/tr1x-em.png"},
 }
 
 
@@ -199,7 +199,7 @@ def main_page() -> None:
     with ui.column().classes('absolute bottom-0 right-0 p-4'):
         with ui.row():
             ui.html('Made with ❤️ by')
-            ui.link('tr1x_em', 'https://trix.is-a.dev').classes('text-red-500 underline')
+            ui.link('desymm', 'https://github.com/symmetricalbyte').classes('text-red-500 underline')
 
     if app.storage.user.get('authenticated', True):
         RedirectResponse('/me')
